@@ -16,11 +16,11 @@ def on_connect(client, userdata, flags, rc):
 # The callback for when a PUBLISH message is received from the server.
 def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
-	if (msg.topic.find("/all") > 0)
-		print(msg.topic+" "+str(msg.payload))
-	else if (msg.topic.find("/all") > 0)
-		print(msg.topic+" "+str(msg.payload))
-		#
+    if (msg.topic.find("/all") > 0)
+        print(msg.topic+" "+str(msg.payload))
+    else if (msg.topic.find("/all") > 0)
+        print(msg.topic+" "+str(msg.payload))
+        #
     # more callbacks, etc
 
 client = mqtt.Client()
