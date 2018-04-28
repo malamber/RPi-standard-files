@@ -18,7 +18,8 @@ def on_message(client, userdata, msg):
     print(msg.topic+" "+str(msg.payload))
     if (msg.topic.find("/all") > 0) :
         print(msg.topic+" "+str(msg.payload))
-    else if (msg.topic.find("/all") > 0):
+    
+    if (msg.topic.find("/all") > 0):
         print(msg.topic+" "+str(msg.payload))
         #
     # more callbacks, etc
